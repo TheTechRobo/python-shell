@@ -2,9 +2,9 @@
 ## This will show info about all the version categories
 # Prereleases
 ### 1st Stage: Alpha
-Alpha was not uploaded to GitHub... ever. It resides on my Mac at Beta 0.3.4... but I'm sure that I can rollback with the versions feature
+Alpha was not uploaded to GitHub... ever. It resides on my Mac at Beta 0.3.4... but I'm sure that I can rollback with the versions feature. It is the first version. Not very developed yet. 
 ### 2nd Stage: Beta
-This is the stage where I uploaded to GitHub. It starts at version 0.3 
+More developed = better program. This is the stage where I uploaded to GitHub. It starts at version 0.3.  
 ### 3rd Stage: Gamma
 This is the getting-near-to-release version. It's versions 0.6 and beyond. 
 ### 4th Stage and Last Prerelease: Omega
