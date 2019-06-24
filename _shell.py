@@ -1,8 +1,13 @@
 #made using Python 3.6.5
 #TtR M
+import time
 def exitShell(): #if the user wants to exit
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
+        print('Stopping Services.......')
+        print("25%.........")
+        time.sleep(1)
+        print("96%......")
         exit() #exit program
     else: #otherwise
         pass # do nothing
@@ -16,7 +21,7 @@ def ls():
     ls **CURRENT COMMAND**
     ''')
 def version(): #make a new command called help()
-    print("Welcome to CustPy 0.4.1d! thanks for using!  ") # output all that
+    print("Welcome to CustPy 0.4.3! thanks for using!  ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -27,7 +32,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this Song to YOU":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.4.1d. Thanks for using!")
+            print("This is CustPy Shell 0.4.3. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
