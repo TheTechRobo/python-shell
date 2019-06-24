@@ -1,7 +1,7 @@
 #made using Python 3.6.5
 #TtR M
 def exitShell(): #if the user wants to exit
-    yn = input("Are you SURE you want to exit CustPyth? (y/n)") #ask if they're sure
+    yn = input("SURE you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
         exit() #exit program
     else: #otherwise
