@@ -16,10 +16,10 @@ def ls():
     ls **CURRENT COMMAND**
     ''')
 def version(): #make a new command called help()
-    print("Welcome to CustPyth 0.3.4! thanks for using!  ") # output all that
+    print("Welcome to CustPyth 0.3.6! thanks for using!  ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
-        txt = input("Last Login:Unknown. !") #Add the prompt
+        txt = input("Last Login: Unknown. !") #Add the prompt
         if txt == "win": #If user types win
             print("This ain't MS-DOS") #output this isn't DOS
         elif txt == "sudo rm -Rf /": #IF user types sudo rm -Rf /
@@ -27,7 +27,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this Song to YOU":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("CustPyth Shell 0.3.5 Thanks for using!")
+            print("CustPyth Shell 0.3.6 Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
