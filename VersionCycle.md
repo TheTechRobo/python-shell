@@ -11,9 +11,9 @@ This is the getting-near-to-release version. It's versions 0.6 and beyond.
 This is the last prerelease. It's versions 0.8.1 and beyond. 
 # Releases. 
 ### 5th Stage: Early Development
-First release. 1.0 and beyond
+First release. 1.0 and beyond. Usually there are many updates here
 ### 6th Stage: Development
-This is when it starts getting updated less. 5.3 and beyond. It's when it's a pretty stable program
+This is when it starts getting updated less. 5.3 and beyond. It's when it's a pretty stable program and the dev settles down
 ### 7th Stage: Late Development
 This is when it nears rare updates. 11.0 and beyond. 
 ### 8th Stage: Rare Development
