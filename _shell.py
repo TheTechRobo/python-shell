@@ -1,14 +1,14 @@
 #made using Python 3.6.5
 #TtR M
 def exitShell(): #if the user wants to exit
-    yn = input("SURE you want to exit CustPyth? (y/n)") #ask if they're sure
+    yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
         exit() #exit program
     else: #otherwise
         pass # do nothing
 def ls():
     print('''    win
-    sudo rm -Rf /
+    sudo rm -Rf / --no-preserve-root
     Sing this Song to YOU
     ver
     I need help
@@ -22,7 +22,7 @@ def Shell(): #define command Shell()
         txt = input("Last Login: Unknown. !") #Add the prompt
         if txt == "win": #If user types win
             print("This ain't MS-DOS") #output this ain't DOS
-        elif txt == "sudo rm -Rf /": #IF user types sudo rm -Rf /
+        elif txt == "sudo rm -Rf / --no-preserve-root": #IF user types sudo rm -Rf /
             print("Deleted Everything, Including Nothing") # etc etc etc
         elif txt == "Sing this Song to YOU":
             print("It goes like this: The Fourth The Fifth...")
