@@ -1,5 +1,5 @@
 #made using Python 3.6.5
-#Anthony Morassutti
+#TtR M
 def exitShell(): #if the user wants to exit
     yn = input("Are you SURE you want to exit? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
@@ -27,7 +27,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this Song to YOU":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("CustPyth Shell 0.3.4 Thanks for using!")
+            print("CustPyth Shell 0.3.5 Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
