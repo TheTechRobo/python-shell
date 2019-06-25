@@ -44,7 +44,12 @@ def Shell(): #define command Shell()
         elif txt == "help" or "I need help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ") 
         elif txt == "slate":
-            print("Text editor coming soon")
+            print("Slate:Alpha")
+            print("I have spent no more than five minutes on it. Just know that")
+            #Experimento! 
+            #SLATE text editor
+            file = input("Enter filename: ")
+            fptr = open(file, "w")
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
