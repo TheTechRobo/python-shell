@@ -45,11 +45,30 @@ def Shell(): #define command Shell()
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ") 
         elif txt == "slate":
             print("Slate:Alpha")
-            print("I have spent no more than five minutes on it. Just know that")
-            #Experimento! 
+            #Snake Experiments
             #SLATE text editor
-            file = input("Enter filename: ")
-            fptr = open(file, "w")
+            #Version 0.1.1
+            print("Going to save files in directory _shell.py is in. If you want to exit, type exit,!")
+            while True:
+                mode = input("Mode: a for append, w for overwrite. Case-sensitive. ")
+                if mode == "a":
+                    file = input("Filename?")
+                    if file == "exit,!":
+                        print("Not developed yet")
+                        #Shell()
+                    else:
+                        my_file = open(file, "a") #open user file as append
+                        my_file.write(input("Type a line. ")) #Append to the file
+
+                else:
+                    file = input("Enter filename: ")
+                    if file == "exit,!":
+                        print("If you did this in the actual version it would restart the shell.")
+                        #Shell()
+                    else:
+                            my_file = open(file, "w")  #open user-chosen file as readwrite
+                            my_file.write(input("Type a line. ")) #Write to the file
+            
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
