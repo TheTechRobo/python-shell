@@ -33,7 +33,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this Song to YOU":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.4.3.2. Thanks for using!")
+            print("This is CustPy Shell 0.4.4. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
@@ -41,11 +41,13 @@ def Shell(): #define command Shell()
         elif txt == "exit":
             print("Starting exit daemon....")
             exitShell()
-        elif txt == "help" or "I need help":
+        elif txt == "help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ") 
         elif txt == "slate":
             print("Slate:Beta")
-            
+            #Not there yet
+        elif txt == "I need help":
+            print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
