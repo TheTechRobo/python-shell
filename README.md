@@ -16,3 +16,6 @@ Type ls for a list of commands! Have fun!
 If you go into the _shell.py, it's complex. So, that's why I added comments. Any words after a hashtag, e.g.
 print("This ain't MS-DOS") #output This ain't MS-DOS
 In that case, #output This ain't MS-DOS would be the comment, but print("This ain't MS-DOS") is a command. 
+
+# Happy 4th of July for all you Americans! 
+# Happy Canada Day for all proud Canadians! (Like me)
