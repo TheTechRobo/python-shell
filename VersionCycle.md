@@ -15,10 +15,6 @@ First release. 1.0 and beyond. Usually there are many updates here
 ### 6th Stage: Development
 This is when it starts getting updated less. 5.3 and beyond. It's when it's a pretty stable program and the dev settles down
 ### 7th Stage: Late Development
-This is when it nears rare updates. 11.0 and beyond. 
-### 8th Stage: Rare Development
-This is when it is usually rarely updated. 20.0 and beyond
-### 9th Stage: Obsoletion
-Hope it never happens with my programs. It stops getting updated much.  It depends when it starts, sometimes NEVER
-### 10th Stage: Abandoned
-Stops getting updated at all. Sometimes new devs come along and the whole cycle repeats. Sometimes just the release cycle. Sometimes the whole cycle. 
+This is when it gets...  updates every week? Depends when it starts. When the dev has a hard time thinking of things. 
+### 9th Stage: Abandoned
+Hope it never happens with my programs. Stops getting updated at all. Sometimes new devs come along and the whole cycle repeats. Sometimes just the release cycle. Sometimes just the pre-release cycle. It depends when it starts, sometimes — hopefully— never. 
