@@ -1,3 +1,5 @@
+# Happy 4th of July, America! 
+# A joyful Canada Day to you, Canada! 
 # version cycle
 #### file version 2.0.3a
 ## this will show info about all the version categories
