@@ -1,4 +1,5 @@
 # version cycle
+#### File Version 2.0.2
 ## This will show info about all the version categories
 # Prereleases
 ### 1st Stage: Alpha
@@ -8,7 +9,7 @@ More developed = better program. This is the stage where I uploaded to GitHub. I
 ### 3rd Stage: Gamma
 This is the getting-near-to-release version. It's versions 0.6 and beyond. 
 ### 4th Stage and Last Prerelease: Omega
-This is the last prerelease. It's versions 0.8.1 and beyond. 
+This is the last prerelease. It's version 0.8.1 and beyond. 
 # Releases. 
 ### 5th Stage: Early Development
 First release. 1.0 and beyond. Usually there are many updates here
@@ -17,4 +18,4 @@ This is when it starts getting updated less. 5.3 and beyond. It's when it's a pr
 ### 7th Stage: Late Development
 This is when it gets...  updates every week? Depends when it starts. When the dev has a hard time thinking of things. 
 ### 8th Stage: Abandoned
-Hope it never happens with my programs. Stops getting updated at all. Sometimes new devs come along and the whole cycle repeats. Sometimes just the release cycle. Sometimes just the pre-release cycle. It depends when it starts, sometimes — hopefully— never. 
+Hope it never happens with my programs. Stops getting updated at all. Sometimes new devs come along and the whole cycle repeats. Sometimes just the release cycle. Sometimes just the pre-release cycle. It depends when it starts, sometimes — hopefully — never. 
