@@ -20,9 +20,11 @@ def ls():
     I need help
     help
     ls **CURRENT COMMAND**
+    4 8 15 16 23 42
+    4 8 15 16 23 42 EXECUTE
     ''')
-def version(): #make a new command called help()
-    print("Welcome to CustPy 0.4.3.1! thanks for using!  ") # output all that
+def version(): #make a new command called version()
+    print("Welcome to CustPy 0.5! thanks for using!  ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -33,7 +35,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this Song to YOU":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.4.4. Thanks for using!")
+            print("This is CustPy Shell 0.5. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
@@ -48,6 +50,14 @@ def Shell(): #define command Shell()
             #Not there yet
         elif txt == "I need help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
+        elif txt == "4 8 15 16 23 42":
+            print("You didn't press EXECUTE")
+        elif txt == "4 8 15 16 23 42 EXECUTE":
+            print('''
+            ________________________________
+            |    1  | 0  | 8  | 0  | 0     |
+            ________________________________
+            ''')
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
