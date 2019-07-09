@@ -1,4 +1,5 @@
 #made using Python 3.6.5
+#Finally gamma!!!!!!!!!!!!
 #TtR M
 import time
 def exitShell(): #if the user wants to exit
@@ -15,16 +16,16 @@ def exitShell(): #if the user wants to exit
 def ls():
     print('''    win
     sudo rm -Rf / --no-preserve-root
-    Sing this Song to YOU
+    Sing this song to You
     ver
     I need help
     help
-    ls **CURRENT COMMAND**
+    ls
     4 8 15 16 23 42
     4 8 15 16 23 42 EXECUTE
     ''')
 def version(): #make a new command called version()
-    print("Welcome to CustPy 0.5! thanks for using!  ") # output all that
+    print("Welcome to CustPy 0.6.1! thanks for using! Finally gamma!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -32,10 +33,10 @@ def Shell(): #define command Shell()
             print("This ain't MS-DOS") #output this ain't MS-DOS
         elif txt == "sudo rm -Rf / --no-preserve-root": #IF user types sudo rm -Rf /
             print("Deleted Everything, Including Nothing") # etc etc etc
-        elif txt == "Sing this Song to YOU":
+        elif txt == "Sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.5. Thanks for using!")
+            print("This is CustPy Shell 0.6.1. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
