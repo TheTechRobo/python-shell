@@ -1,2 +1,4 @@
-# python-shell
-Simple, commented Python shell. Doesn't seem to work with the Python Launcher, but works with IDLE
+# Translating CustPy
+Thanks SOOOOO much for deciding to translate CustPy. 
+There is a translate.txt file uploaded here, PLEASE use it and follow the directions
+# Thanks! 
