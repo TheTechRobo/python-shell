@@ -23,6 +23,8 @@ def ls():
     ls
     4 8 15 16 23 42
     4 8 15 16 23 42 EXECUTE
+    laugh
+    I need a laugh
     ''')
 def version(): #make a new command called version()
     print("Welcome to CustPy 0.6.1! thanks for using! Finally gamma!!!! ") # output all that
@@ -36,7 +38,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.6.1. Thanks for using!")
+            print("This is CustPy Shell 0.6.2. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
@@ -59,6 +61,9 @@ def Shell(): #define command Shell()
             |    1  | 0  | 8  | 0  | 0     |
             ________________________________
             ''')
+        elif txt == "laugh":
+            from __future__ import braces #A python joke
+            import antigravity #A comic strip
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
