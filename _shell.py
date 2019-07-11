@@ -29,7 +29,7 @@ def ls():
     clear
     ''')
 def version(): #make a new command called version()
-    print("Welcome to CustPy 0.6.1! thanks for using! Finally gamma!!!! ") # output all that
+    print("Welcome to CustPy 0.6.3! thanks for using! Finally gamma!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -40,7 +40,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.6.2. Thanks for using!")
+            print("This is CustPy Shell 0.6.3. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
@@ -49,7 +49,7 @@ def Shell(): #define command Shell()
             print("Starting exit daemon....")
             exitShell()
         elif txt == "help":
-            print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ") 
+            print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         elif txt == "slate":
             print("Slate:Beta")
             #Not there yet
@@ -64,44 +64,44 @@ def Shell(): #define command Shell()
             ________________________________
             ''')
         elif txt == "laugh":
-            from __future__ import braces #A python joke
+            #from __future__ import braces #A python joke
             import antigravity #A comic strip
         elif txt == "I need a laugh":
-            from __future__ import braces
+            #from __future__ import braces
             import antigravity
         elif txt == "clear":
             print('''
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             ''')
         elif txt == "cls":
             print('''
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             ''')
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
