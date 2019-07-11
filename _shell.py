@@ -64,7 +64,7 @@ def Shell(): #define command Shell()
             ________________________________
             ''')
         elif txt == "laugh":
-            #from __future__ import braces #A python joke
+            print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
             import antigravity #A comic strip
         elif txt == "I need a laugh":
             #from __future__ import braces
