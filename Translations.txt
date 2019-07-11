@@ -4,5 +4,5 @@ Language:
 
 
 Type ANYTHING you want to translate, in this format::
-English Phrase  Phrase francais German Phrase
+OneLanguage  Une autre langue Yet Another Language
 and just keep collaborating! THANKS A BUNCH!!! 
