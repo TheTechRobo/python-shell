@@ -4,6 +4,5 @@ Language:
 
 
 Type ANYTHING you want to translate, in this format::
-Original English phrase on the left, and 
-Translation on the right
-Thanks for translating! 
+English Phrase  Phrase francais German Phrase
+and just keep collaborating! THANKS A BUNCH!!! 
