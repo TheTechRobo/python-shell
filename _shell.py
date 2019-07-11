@@ -29,7 +29,7 @@ def ls():
     clear
     ''')
 def version(): #make a new command called version()
-    print("Welcome to CustPy 0.7.4! thanks for using! Finally gamma!!!! ") # output all that
+    print("Welcome to CustPy 0.7.5! thanks for using! Finally gamma!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -40,7 +40,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.7.4. Thanks for using!")
+            print("This is CustPy Shell 0.7.5. Thanks for using!")
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "ver":
@@ -51,7 +51,8 @@ def Shell(): #define command Shell()
         elif txt == "help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         elif txt == "slate":
-            print("Slate:Beta")
+            print("slate has been delayed")
+            print("Sorry for the inconvenience")
             #Not there yet
         elif txt == "I need help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
