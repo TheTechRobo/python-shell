@@ -25,6 +25,8 @@ def ls():
     4 8 15 16 23 42 EXECUTE
     laugh
     I need a laugh
+    cls
+    clear
     ''')
 def version(): #make a new command called version()
     print("Welcome to CustPy 0.6.1! thanks for using! Finally gamma!!!! ") # output all that
@@ -64,6 +66,43 @@ def Shell(): #define command Shell()
         elif txt == "laugh":
             from __future__ import braces #A python joke
             import antigravity #A comic strip
+        elif txt == "I need a laugh":
+            from __future__ import braces
+            import antigravity
+        elif txt == "clear":
+            print('''
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            ''')
+        elif txt == "cls":
+            print('''
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            ''')
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
