@@ -16,7 +16,7 @@ def exitShell(): #if the user wants to exit
 def ls():
     print('''    win
     sudo rm -Rf / --no-preserve-root
-    Sing this song to You
+    sing this song to You
     ver
     I need help
     help
@@ -29,7 +29,7 @@ def ls():
     clear
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.7.9! thanks for using! Finally gamma!!!! ") # output all that
+    print("Welcome to CustPy 0.7.9b! thanks for using! Finally gamma!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -37,10 +37,10 @@ def Shell(): #define command Shell()
             print("This ain't MS-DOS") #output "This ain't MS-DOS"
         elif txt == "sudo rm -Rf / --no-preserve-root": #IF user types sudo rm -Rf /
             print("Deleted Everything, Including Nothing") # etc etc etc
-        elif txt == "Sing this song to You":
+        elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.7.9. Thanks for using!")
+            print("This is CustPy Shell 0.7.9b. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
