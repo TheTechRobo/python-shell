@@ -41,9 +41,10 @@ def ls():
     look at me
     I found the egg
     what'd you stop for, Doc?
+    no you're not
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9.1! thanks for using! it's omega!!!! ") # output all that
+    print("Welcome to CustPy 0.9.7! thanks for using! it's omega!!!! ") # output all that
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
@@ -55,7 +56,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9.1. Thanks for using! yay, omega is here! ")
+            print("This is CustPy Shell 0.9.7. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -172,13 +173,14 @@ def Shell(): #define command Shell()
                 print("Liar, liar, pants on fire, stuck in a dryer on a telephone wire!")
         elif txt == "what'd you stop for, Doc?":
             print("Gotta tie up my shoe!")
+            print("Command activated:well Dopey here just stepped on my foot")
             tie = 1
         elif txt == "well Dopey here just stepped on my foot!":
             if tie == 1:
                 print("Gee, Grumpy, maybe your foot was in the wrong spot.")
                 print("I'll show you spots, you big galoot!")
              else: 
-                print()
+                print("SyntaxError: CommandNotActive)
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
