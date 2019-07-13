@@ -17,3 +17,11 @@ If you go into the _shell.py, it's complex. So, that's why I added comments. Any
 print("This ain't MS-DOS") #output This ain't MS-DOS
 In that case, #output This ain't MS-DOS would be the comment, but print("This ain't MS-DOS") is a command. 
 #### I hope you LOVE CustPy... if you have any feed-back WHATSOEVER please leave it in the Issues section
+
+
+
+
+
+# PLEASE NOTE! 
+### CustPy IS dependent on python 3 or later, 2.x might work, but I doubt it
+### Also, early versions of Python 3.x may not work. I have tested on a) Python 3.6.5 — in IDLE, and b) in Python 3.7.3 — in cmd
