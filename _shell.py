@@ -42,7 +42,7 @@ def ls():
     what'd you stop for, Doc?
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9! thanks for using! it's omega!!!! ") # output all that
+    print("Welcome to CustPy 0.9.1! thanks for using! it's omega!!!! ") # output all that
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
@@ -54,7 +54,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9. Thanks for using! yay, omega is here! ")
+            print("This is CustPy Shell 0.9.1. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -82,6 +82,7 @@ def Shell(): #define command Shell()
             ''')
         elif txt == "laugh":
             print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
+            print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
             import antigravity #A comic strip
         elif txt == "I need a laugh":
             print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
