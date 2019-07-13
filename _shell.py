@@ -1,6 +1,9 @@
 #made using Python 3.6.5
 #Almost omega!!!!!!!!!!!!
 #TtR M
+#Setup
+egg = 0
+tie = 0
 import time
 def exitShell(): #if the user wants to exit
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
@@ -34,9 +37,13 @@ def ls():
     I need a laugh
     cls
     clear
+    look at me
+    I found the egg
+    what'd you stop for, Doc?
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.8c! thanks for using! Almost omega!!!! ") # output all that
+    print("Welcome to CustPy 0.9! thanks for using! it's omega!!!! ") # output all that
+#Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -47,7 +54,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.8c. Thanks for using! Close to omega! We are right now at gamma-the-hut :)")
+            print("This is CustPy Shell 0.9. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -141,7 +148,26 @@ def Shell(): #define command Shell()
 
 
 
-            ''')       
+            ''')
+        elif txt == "egg":
+            print("YOU FOUND AN EASTER EGG!!")
+            egg = 1
+        elif txt == "look at me":
+            print("I'm the king of New York!")
+        elif txt == "I found the egg":
+            if egg == 1:
+                print("Yes, you did! Congrats!")
+            else: 
+                print("Liar, liar, pants on fire, stuck in a dryer on a telephone wire!")
+        elif txt == "what'd you stop for, Doc?":
+            print("Gotta tie up my shoe!")
+            tie = 1
+        elif txt == "well Dopey here just stepped on my foot!":
+            if tie == 1:
+                print("Gee, Grumpy, maybe your foot was in the wrong spot.")
+                print("I'll show you spots, you big galoot!")
+             else: 
+                print()
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
