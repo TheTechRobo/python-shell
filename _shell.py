@@ -1,5 +1,5 @@
 #made using Python 3.6.5
-#Finally gamma!!!!!!!!!!!!
+#Almost omega!!!!!!!!!!!!
 #TtR M
 import time
 def exitShell(): #if the user wants to exit
