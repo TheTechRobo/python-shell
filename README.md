@@ -3,6 +3,9 @@ Simple, commented Python shell. Doesn't seem to work with the Python Launcher, b
 
 Thanks for using! Your support inspires me
 
+# IMPORTANT
+###### Experimento! on CustPy is discontinued. Sorry for the inconvenience. Please use gamma and beta and omega for experimento now. However, on other projects this may remain unchanged
+
 # How to use CustPy
 There are many commands to use! Here's a... 
 ### Tutorial
