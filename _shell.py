@@ -2,6 +2,7 @@
 #Almost omega!!!!!!!!!!!!
 #TtR M
 #Setup
+me = 0
 egg = 0
 tie = 0
 import time
