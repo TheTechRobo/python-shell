@@ -151,10 +151,19 @@ def Shell(): #define command Shell()
 
             ''')
         elif txt == "egg":
-            print("YOU FOUND AN EASTER EGG!!")
+            if egg == 1:
+                print("What more do you want from me? I have nothing left to offer you.")
+            else: 
+                print("YOU FOUND AN EASTER EGG!!")
             egg = 1
         elif txt == "look at me":
             print("I'm the king of New York!")
+            me = 1
+        elif txt == "no you're not":
+            if me == 1:
+                print("Oh yeah, you're the king of New York. My bad. I must have the words wrong")
+            else:
+                print("I'm not what again?")
         elif txt == "I found the egg":
             if egg == 1:
                 print("Yes, you did! Congrats!")
