@@ -42,9 +42,14 @@ def ls():
     I found the egg
     what'd you stop for, Doc?
     no you're not
+    activateCmd
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9.7! thanks for using! it's omega!!!! ") # output all that
+    print("Welcome to CustPy 0.9.8! thanks for using! it's omega!!!! ") # output all that
+def activ():
+    activate = input("What command?")
+    key = input("What key?")
+    print("Okay, processing your data.....")
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
@@ -56,7 +61,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9.7. Thanks for using! yay, omega is here! ")
+            print("This is CustPy Shell 0.9.8. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -164,6 +169,8 @@ def Shell(): #define command Shell()
         elif txt == "no you're not":
             if me == 1:
                 print("Oh yeah, you're the king of New York. My bad. I must have the words wrong")
+        elif txt == "activateCmd":
+            activ()
             else:
                 print("I'm not what again?")
         elif txt == "I found the egg":
