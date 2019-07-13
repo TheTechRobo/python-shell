@@ -36,7 +36,7 @@ def ls():
     clear
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.8! thanks for using! Almost omega!!!! ") # output all that
+    print("Welcome to CustPy 0.8c! thanks for using! Almost omega!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -47,7 +47,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.8. Thanks for using! Close to omega! We are right now at gamma-the-hut :)")
+            print("This is CustPy Shell 0.8c. Thanks for using! Close to omega! We are right now at gamma-the-hut :)")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
