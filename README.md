@@ -1,7 +1,7 @@
 # python-shell
 Simple, commented Python shell. Doesn't seem to work with the Python Launcher, but works with IDLE and normal Python (no Python Launcher). Functions just like a terminal, but different commands
 
-Thanks for using! Your support inspires me :) :smile:
+Thanks for using! Your support inspires me  :smile:
 
 # How to use CustPy
 There are many commands to use! Here's a... 
