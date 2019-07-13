@@ -29,7 +29,7 @@ def ls():
     clear
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.7.8! thanks for using! Finally gamma!!!! ") # output all that
+    print("Welcome to CustPy 0.7.9! thanks for using! Finally gamma!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -40,9 +40,11 @@ def Shell(): #define command Shell()
         elif txt == "Sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.7.8. Thanks for using!")
+            print("This is CustPy Shell 0.7.9. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
+        elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
+            ver()
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
         elif txt == "exit":
