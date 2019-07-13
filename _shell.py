@@ -9,6 +9,13 @@ def exitShell(): #if the user wants to exit
         print("25%.........")
         time.sleep(1)
         print("96%......")
+        time.sleep(0.2)
+        print("97%.....")
+        time.sleep(0.2)
+        print("98%.....")
+        time.sleep(0.12)
+        print("99%......")
+        time.sleep(0.46)
         print('100%..')
         exit() #exit program
     else: #otherwise
@@ -29,7 +36,7 @@ def ls():
     clear
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.7.9b! thanks for using! Finally gamma!!!! ") # output all that
+    print("Welcome to CustPy 0.8! thanks for using! Almost omega!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -40,7 +47,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.7.9b. Thanks for using!")
+            print("This is CustPy Shell 0.8. Thanks for using! Close to omega! We are right now at gamma-the-hut :)")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -71,6 +78,7 @@ def Shell(): #define command Shell()
             import antigravity #A comic strip
         elif txt == "I need a laugh":
             print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
+            print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
             import antigravity
         elif txt == "clear":
             print('''
