@@ -29,7 +29,7 @@ def ls():
     clear
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.7.7! thanks for using! Finally gamma!!!! ") # output all that
+    print("Welcome to CustPy 0.7.8! thanks for using! Finally gamma!!!! ") # output all that
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
         txt = input("Last Login: Unknown. !") #Add the prompt
@@ -40,7 +40,7 @@ def Shell(): #define command Shell()
         elif txt == "Sing this song to You":
             print("It goes like this: The Fourth The Fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.7.7. Thanks for using!")
+            print("This is CustPy Shell 0.7.8. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "ls": #if they type ls
@@ -86,6 +86,20 @@ def Shell(): #define command Shell()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             ''')
         elif txt == "cls":
             print('''
@@ -103,7 +117,21 @@ def Shell(): #define command Shell()
 
 
 
-            ''')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            ''')       
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
