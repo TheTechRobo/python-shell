@@ -21,9 +21,10 @@ def exitShell(): #if the user wants to exit
         print("99%......")
         time.sleep(0.46)
         print('100%..')
+        print('Exiting...')
         exit() #exit program
     else: #otherwise
-        pass # do nothing
+        Shell() # go back to the Shell()
 def ls():
     print('''    win
     sudo rm -Rf / --no-preserve-root
@@ -59,7 +60,7 @@ def Shell(): #define command Shell()
         elif txt == "sudo rm -Rf / --no-preserve-root": #IF user types sudo rm -Rf /
             print("Deleted Everything, Including Nothing") # etc etc etc
         elif txt == "sing this song to You":
-            print("It goes like this: The Fourth The Fifth...")
+            print("It goes like this: the fourth the fifth...")
         elif txt == "version":
             print("This is CustPy Shell 0.9.8. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
