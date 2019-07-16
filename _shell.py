@@ -46,7 +46,7 @@ def ls():
     activateCmd
     ''')
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9.8! thanks for using! it's omega!!!! ") # output all that
+    print("Welcome to CustPy 0.9.9b! thanks for using! it's omega!!!! ") # output all that
 def activ():
     activate = input("What command?")
     key = input("What key?")
@@ -62,7 +62,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9.8. Thanks for using! yay, omega is here! ")
+            print("This is CustPy Shell 0.9.9b. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
