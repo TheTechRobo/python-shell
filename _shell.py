@@ -6,7 +6,7 @@ me = 0
 egg = 0
 tie = 0
 import time
-#New commands! 
+#New commands, to make the if txt == blah more compact  
 def exitShell(): #if the user wants to exit
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
@@ -59,7 +59,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9.10! thanks for using!  ") # output all that
+    print("Welcome to CustPy 0.9.11! thanks for using!  ") # output all that
 def activ():
     activate = input("What command?")
     key = input("What key?")
@@ -76,7 +76,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9.9b. Thanks for using! yay, omega is here! ")
+            print("This is CustPy Shell 0.9.11. Thanks for using! yay, omega is here! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -184,10 +184,10 @@ def Shell(): #define command Shell()
         elif txt == "no you're not":
             if me == 1:
                 print("Oh yeah, you're the king of New York. My bad. I must have the words wrong")
-        elif txt == "activateCmd":
-            activ()
             else:
                 print("I'm not what again?")
+        elif txt == "activateCmd":
+            activ()
         elif txt == "I found the egg":
             if egg == 1:
                 print("Yes, you did! Congrats!")
