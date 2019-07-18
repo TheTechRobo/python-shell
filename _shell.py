@@ -6,7 +6,7 @@ me = 0
 egg = 0
 tie = 0
 import time
-#New commands, to make the if txt == blah more compact  
+#New commands, to make the if txt == ... more compact  
 def exitShell(): #if the user wants to exit
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
