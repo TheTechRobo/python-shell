@@ -27,7 +27,10 @@ def exitShell(): #if the user wants to exit
     else: #otherwise
         Shell() # go back to the Shell()
 def ls():
-        print('''   win
+        print('''COMMAND LIST
+NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you can't type Cls
+
+    win
     sudo rm -Rf / --no-preserve-root
     sing this song to You
     I need help
@@ -200,6 +203,8 @@ def Shell(): #define command Shell()
                 print("I'll show you spots, you big galoot!")
              else: 
                 print("SyntaxError: CommandNotActive)
+        elif txt == "update":
+            up2down()
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
