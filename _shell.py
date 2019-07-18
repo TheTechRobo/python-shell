@@ -1,11 +1,12 @@
 #made using Python 3.6.5
-#Almost omega!!!!!!!!!!!!
+#it's omega!!!!!!!!!!!!
 #TtR M
 #Setup
 me = 0
 egg = 0
 tie = 0
 import time
+#New commands! 
 def exitShell(): #if the user wants to exit
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
@@ -26,13 +27,14 @@ def exitShell(): #if the user wants to exit
     else: #otherwise
         Shell() # go back to the Shell()
 def ls():
-    print('''    win
+        print('''   win
     sudo rm -Rf / --no-preserve-root
     sing this song to You
-    ver
     I need help
     help
     ls
+    ver
+    VER
     4 8 15 16 23 42
     4 8 15 16 23 42 EXECUTE
     laugh
@@ -45,12 +47,21 @@ def ls():
     no you're not
     activateCmd
     ''')
+def up2down():
+    from tqdm import tqdm
+    import requests
+    url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
+    response = requests.get(url, stream=True)
+    with open("_shell", "wb") as handle:
+        for data in tqdm(response.iter_content()):
+            handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9.9b! thanks for using! it's omega!!!! ") # output all that
+    print("Welcome to CustPy 0.9.10! thanks for using!  ") # output all that
 def activ():
     activate = input("What command?")
     key = input("What key?")
     print("Okay, processing your data.....")
+    print("SyntaxError: Key Invalid! ")
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
