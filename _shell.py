@@ -76,7 +76,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9.11. Thanks for using! yay, omega is here! ")
+            print("This is CustPy Shell 0.9.11. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -89,9 +89,7 @@ def Shell(): #define command Shell()
         elif txt == "help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         elif txt == "slate":
-            print("slate has been delayed")
-            print("Sorry for the inconvenience")
-            #Not there yet
+            print("slate has been delayed, sorry for the inconvenience")
         elif txt == "I need help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         elif txt == "4 8 15 16 23 42":
