@@ -49,6 +49,8 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     what'd you stop for, Doc?
     no you're not
     activateCmd
+    purge
+    swan
     ''')
 def up2down():
     from tqdm import tqdm
@@ -59,7 +61,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.9.11! thanks for using!  ") # output all that
+    print("Welcome to CustPy 0.10! thanks for using!  ") # output all that
 def activ():
     activate = input("What command?")
     key = input("What key?")
@@ -76,7 +78,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.9.11. Thanks for using! ")
+            print("This is CustPy Shell 0.10. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -203,6 +205,15 @@ def Shell(): #define command Shell()
                 print("SyntaxError: CommandNotActive)
         elif txt == "update":
             up2down()
+        elif txt == "purge":
+            print("That's not nice to the DHARMA folk!")
+        elif txt == "swan"
+            NumbersExec = input(">: ")
+            print("Achievement Unlocked: The Numbers")
+        elif txt == "Ajira Airways":
+            print("Flight 316")
+        elif txt == "what plane should I fly":
+            print("Oceanic Flight 815")
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
 Shell()
