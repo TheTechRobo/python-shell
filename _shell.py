@@ -51,6 +51,8 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     activateCmd
     purge
     swan
+    Ajira Airways
+    what plane should I fly
     ''')
 def up2down():
     from tqdm import tqdm
