@@ -11,7 +11,7 @@ Launch the program. It should say,
 ##### Last Login: Unknown. !
 Type your command after the !. Here, we'll type win. It should say, 
 ##### This ain't MS-DOS
-Type ls for a list of commands! Have fun! 
+Type ls for a list of commands. Have fun!  
 #### How to use the comments
 If you go into the _shell.py, it's complex. So, that's why I added comments. Any words after a hashtag, e.g.
 #this is a comment
@@ -21,7 +21,7 @@ print("This ain't MS-DOS") #output This ain't MS-DOS
 In that case, #output This ain't MS-DOS would be the comment, but print("This ain't MS-DOS") is a Python command. 
 #### I hope you LOVE CustPy... if you have any feed-back WHATSOEVER please leave it in the Issues section
 
-###### Can you guys BELIEVE it's already omega? Almost a month and it's almost a release!! 
+###### Can you BELIEVE it's already omega? Almost a month and it's almost a release!! 
 
 
 
