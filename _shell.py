@@ -5,7 +5,9 @@
 me = 0
 egg = 0
 tie = 0
+runThru = 0
 import time
+import os #Now I can control the OS using commands
 #New commands, to make the if txt == ... more compact  
 def exitShell(): #if the user wants to exit
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
@@ -53,6 +55,7 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     swan
     Ajira Airways
     what plane should I fly
+    cmd --amount
     ''')
 def up2down():
     from tqdm import tqdm
@@ -63,7 +66,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10! thanks for using!  ") # output all that
+    print("Welcome to CustPy 0.10.1! thanks for using!  ") # output all that
 def activ():
     activate = input("What command?")
     key = input("What key?")
@@ -80,7 +83,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10. Thanks for using! ")
+            print("This is CustPy Shell 0.10.1. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -216,6 +219,12 @@ def Shell(): #define command Shell()
             print("Flight 316")
         elif txt == "what plane should I fly":
             print("Oceanic Flight 815")
+        elif txt == "cmd --amount":
+            print("You have typed a command " +runThru "times")
+        elif txt == "what is your favourite character in Lost":
+            print("Desmond all the way!") #While I was typing De, it came out Sw. He worked in the Swan...
+            #The keys on a keyboard of Desm and Swan are RIGHT BESIDE each other! Wow. 
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
+        runThru = runThru + 1
 Shell()
