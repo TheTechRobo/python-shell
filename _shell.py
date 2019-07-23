@@ -68,7 +68,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.4! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.10.5! thanks for using!  ") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -92,7 +92,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.4. Thanks for using! ")
+            print("This is CustPy Shell 0.10.5. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -227,6 +227,39 @@ def Shell(): #define command Shell()
             numbersExec = input(">: ")
             if numbersExec == "4815162342":
                 print("SyntaxError: you forgot EXECUTE")
+            elif numbersExec == "4 8 15 16 23 42":
+                print("SyntaxError: you forgot EXECUTE")
+            elif numbersExec == "4 8 15 16 23 42 EXECUTE":
+                print('''
+            ________________________________
+            |    1  | 0  | 8  | 0  | 0     |
+            ________________________________
+            ''')
+            elif numbersExec == "4 8 15 16 23 42 execute":
+                print('''
+            ________________________________
+            |    1  | 0  | 8  | 0  | 0     |
+            ________________________________
+            ''')
+            elif numbersExec == "4815162342 execute":
+                print('''
+            ________________________________
+            |    1  | 0  | 8  | 0  | 0     |
+            ________________________________
+            ''')
+            elif numbersExec == "4815162342 EXECUTE":
+                print('''
+            ________________________________
+            |    1  | 0  | 8  | 0  | 0     |
+            ________________________________
+            ''')
+            else: 
+                print("Hello?")
+                response = input()
+                print("Who is this?")
+                response = input()
+                print("Dad?")
+                print("Achievement Unlocked: Walt")
             print("Achievement Unlocked: The Numbers")
             achieveNumber = 1
         elif txt == "Ajira Airways":
@@ -239,13 +272,25 @@ def Shell(): #define command Shell()
             print("Desmond all the way!") #While I was typing De, it came out Sw. He worked in the Swan...
             #The keys on a keyboard of Desm and Swan are RIGHT BESIDE each other! Wow.
         elif txt == "you suck":
-            print("Don't
+            print("Don't type i hate you or you'll be sorry")
             Insult = 1
         elif txt == "i hate you":
             print("Leave an issue on GitHub if you don't like it")
             if Insult == 1:
-                print(1007988720 * 4887987304487 - 663.34159)
-                exit()
+                print(1007988720 / 3800 * 4887987304487 - 663.314159)
+            else:
+                print("We can talk about it")
+        elif txt == "swan --usage":
+            print('''
+            ORIENTATION
+            
+            This is the orientation text for the Swan station. I am Marvin Candle, the founder of DHARMA. 
+            
+            Every time you type this command, you must enter the code. 
+            If you attempt to use the Computer for anything other than the Code, there may be another—
+            
+            Thank you for being a member of the DHARMA Initiative. In 540 days, your replacements will arrive. 
+            ''')
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
         if exitOffendant == 1:
