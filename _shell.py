@@ -5,9 +5,11 @@ me = 0
 egg = 0
 tie = 0
 runThru = 0
+Insult = 0
+exitOffendant = 0
 import time
 import os #Now I can control the OS using commands
-#New commands, to make the if txt == ... more compact  
+#New commands made when the script starts, to make the if txt == ... more compact  
 def exitShell(): #make a new command called exitShell() that does the following: 
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
@@ -66,11 +68,11 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.2! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.10.3! thanks for using!  ") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
-        os.run(start activatingActiv.bat)
+        os.system(start activ.bat)
     else:
         activate = input("What command?")
         key = input("What key?")
@@ -90,7 +92,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.2. Thanks for using! ")
+            print("This is CustPy Shell 0.10.3. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -216,13 +218,15 @@ def Shell(): #define command Shell()
                 print("Gee, Grumpy, maybe your foot was in the wrong spot.")
                 print("I'll show you spots, you big galoot!")
              else: 
-                print("SyntaxError: CommandNotActive)
+                print("SyntaxError: not gonna happen)
         elif txt == "update":
             up2down()
         elif txt == "purge":
             print("That's not nice to the DHARMA folk!")
         elif txt == "swan"
-            NumbersExec = input(">: ")
+            numbersExec = input(">: ")
+            if numbersExec == "4815162342":
+                print("SyntaxError: you forgot EXECUTE")
             print("Achievement Unlocked: The Numbers")
             achieveNumber = 1
         elif txt == "Ajira Airways":
@@ -233,8 +237,20 @@ def Shell(): #define command Shell()
             print("You have typed a command " +runThru "times")
         elif txt == "what is your favourite character in Lost":
             print("Desmond all the way!") #While I was typing De, it came out Sw. He worked in the Swan...
-            #The keys on a keyboard of Desm and Swan are RIGHT BESIDE each other! Wow. 
+            #The keys on a keyboard of Desm and Swan are RIGHT BESIDE each other! Wow.
+        elif txt == "you suck":
+            print("Don't
+            Insult = 1
+        elif txt == "i hate you":
+            print("Leave an issue on GitHub if you don't like it")
+            if Insult == 1:
+                print(100101748999509505849479823 * 48304833423470483487 - 663.342)
+                exit()
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
+        if exitOffendant == 1:
+            exit()
         runThru = runThru + 1
+        if Insult == 1:
+            exitOffendant = 1
 Shell()
