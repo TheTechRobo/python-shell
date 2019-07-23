@@ -1,5 +1,4 @@
 #made using Python 3.6.5
-#it's omega!!!!!!!!!!!!
 #TtR M
 #Setup
 me = 0
@@ -9,7 +8,7 @@ runThru = 0
 import time
 import os #Now I can control the OS using commands
 #New commands, to make the if txt == ... more compact  
-def exitShell(): #if the user wants to exit
+def exitShell(): #make a new command called exitShell() that does the following: 
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
     if yn == "y": #if they type y
         print('Stopping Services.......')
@@ -56,6 +55,7 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     Ajira Airways
     what plane should I fly
     cmd --amount
+    what is your favourite character in Lost
     ''')
 def up2down():
     from tqdm import tqdm
@@ -66,12 +66,19 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.1! thanks for using!  ") # output all that
+    print("Welcome to CustPy 0.10.2! thanks for using!  ") #output all that
 def activ():
-    activate = input("What command?")
-    key = input("What key?")
-    print("Okay, processing your data.....")
-    print("SyntaxError: Key Invalid! ")
+    win = input("Is your OS the following: Windows? (y/n, case-sensitive)
+    if win == "y":
+        os.run(start activatingActiv.bat)
+    else:
+        activate = input("What command?")
+        key = input("What key?")
+        print("Okay, processing your data.....")
+        print("SyntaxError: Key Invalid! ")
+        key()
+def key():
+    print("Unable to connect to Blacksmith.")
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
@@ -83,13 +90,15 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.1. Thanks for using! ")
+            print("This is CustPy Shell 0.10.2. Thanks for using! ")
         elif txt == "ver":
-            ver() #run the ver() command (18 and 19)
+            ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
             ver()
         elif txt == "ls": #if they type ls
             ls() # run the newly-made ls() command (lines 9 through 16)
+        elif txt == "LS":
+            ls() # same thing
         elif txt == "exit":
             print("Starting exit daemon....")
             exitShell()
@@ -215,6 +224,7 @@ def Shell(): #define command Shell()
         elif txt == "swan"
             NumbersExec = input(">: ")
             print("Achievement Unlocked: The Numbers")
+            achieveNumber = 1
         elif txt == "Ajira Airways":
             print("Flight 316")
         elif txt == "what plane should I fly":
