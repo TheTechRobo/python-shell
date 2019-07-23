@@ -68,7 +68,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.3! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.10.4! thanks for using!  ") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -92,7 +92,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.3. Thanks for using! ")
+            print("This is CustPy Shell 0.10.4. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -244,7 +244,7 @@ def Shell(): #define command Shell()
         elif txt == "i hate you":
             print("Leave an issue on GitHub if you don't like it")
             if Insult == 1:
-                print(100101748999509505849479823 * 48304833423470483487 - 663.342)
+                print(1007988720 * 4887987304487 - 663.34159)
                 exit()
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
