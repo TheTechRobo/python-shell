@@ -58,6 +58,8 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     what plane should I fly
     cmd --amount
     what is your favourite character in Lost
+    swan --usage
+    swan --usage --splice
     ''')
 def up2down():
     from tqdm import tqdm
@@ -68,7 +70,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.5! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.10.6! thanks for using!  ") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -92,7 +94,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.5. Thanks for using! ")
+            print("This is CustPy Shell 0.10.6. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -253,6 +255,18 @@ def Shell(): #define command Shell()
             |    1  | 0  | 8  | 0  | 0     |
             ________________________________
             ''')
+            elif numbersExec == "4 8 15 16 23 32":
+                print("It's 42, said Jack")
+            elif numbersExec == "4815162332":
+                print("It's 42, said Jack")
+            elif numbersExec == "4 8 15 16 23 32 EXECUTE":
+                print("SyntaxError: you gotta be kidding me. We've got Locke??")
+            elif numbersExec == "4 8 15 16 23 32 execute":
+                print("SyntaxError: you gotta be kidding me. We've got Locke??")
+            elif numbersExec == "4815162332 execute":
+                print("SyntaxError: you gotta be kidding me. We've got Locke??")
+            elif numbersExec == "4815162342 EXECUTE":
+                print("SyntaxError: Good grief. We've got Locke??")
             else: 
                 print("Hello?")
                 response = input()
@@ -286,8 +300,19 @@ def Shell(): #define command Shell()
             
             This is the orientation text for the Swan station. I am Marvin Candle, the founder of DHARMA. 
             
-            Every time you type this command, you must enter the code. 
-            If you attempt to use the Computer for anything other than the Code, there may be another—
+            Every time you type this command, you must enter the code, to prevent—
+            Never attempt to use the Computer for anything other than the Code, because there may—
+            
+            Thank you for being a member of the DHARMA Initiative. In 540 days, your replacements will arrive. 
+            ''')
+        elif txt == "swan --usage --splice":
+            print('''
+            ORIENTATION
+            
+            This is the orientation text for the Swan station. I am Marvin Candle, the founder of DHARMA. 
+            
+            Every time you type this command, you must enter the code to prevent another Incident—and therefore save the world. 
+            Never attempt to use the Computer for anything other than the Code, because there may be another Incident. 
             
             Thank you for being a member of the DHARMA Initiative. In 540 days, your replacements will arrive. 
             ''')
