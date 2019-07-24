@@ -5,9 +5,7 @@ me = 0
 egg = 0
 tie = 0
 runThru = 0
-Insult = 0
-exitOffendant = 0
-import time
+import time #
 import os #Now I can control the OS using commands
 #New commands made when the script starts, to make the if txt == ... more compact  
 def exitShell(): #make a new command called exitShell() that does the following: 
@@ -38,7 +36,7 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     sing this song to You
     I need help
     help
-    ls
+    HELP
     ver
     VER
     4 8 15 16 23 42
@@ -70,7 +68,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.6! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.10.7! thanks for using!  ") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -80,8 +78,8 @@ def activ():
         key = input("What key?")
         print("Okay, processing your data.....")
         print("SyntaxError: Key Invalid! ")
-        key()
-def key():
+        keyStore()
+def keyStore():
     print("Unable to connect to Blacksmith.")
 #Main loop
 def Shell(): #define command Shell()
@@ -94,32 +92,27 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.6. Thanks for using! ")
+            print("This is CustPy Shell 0.10.7. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
             ver()
         elif txt == "ls": #if they type ls
-            ls() # run the newly-made ls() command (lines 9 through 16)
+            ls() #run the ls() command (lines 9 through 16)
         elif txt == "LS":
-            ls() # same thing
+            ls() #same thing
         elif txt == "exit":
             print("Starting exit daemon....")
             exitShell()
+        elif txt == "EXIT":
+            exitShll()
         elif txt == "help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         elif txt == "slate":
             print("slate has been delayed, sorry for the inconvenience")
         elif txt == "I need help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
-        elif txt == "4 8 15 16 23 42":
-            print("You didn't press EXECUTE")
-        elif txt == "4 8 15 16 23 42 EXECUTE":
-            print('''
-            ________________________________
-            |    1  | 0  | 8  | 0  | 0     |
-            ________________________________
-            ''')
+        elif txt == "
         elif txt == "laugh":
             print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
             print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
@@ -285,15 +278,6 @@ def Shell(): #define command Shell()
         elif txt == "what is your favourite character in Lost":
             print("Desmond all the way!") #While I was typing De, it came out Sw. He worked in the Swan...
             #The keys on a keyboard of Desm and Swan are RIGHT BESIDE each other! Wow.
-        elif txt == "you suck":
-            print("Don't type i hate you or you'll be sorry")
-            Insult = 1
-        elif txt == "i hate you":
-            print("Leave an issue on GitHub if you don't like it")
-            if Insult == 1:
-                print(1007988720 / 3800 * 4887987304487 - 663.314159)
-            else:
-                print("We can talk about it")
         elif txt == "swan --usage":
             print('''
             ORIENTATION
@@ -318,9 +302,5 @@ def Shell(): #define command Shell()
             ''')
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
-        if exitOffendant == 1:
-            exit()
         runThru = runThru + 1
-        if Insult == 1:
-            exitOffendant = 1
 Shell()
