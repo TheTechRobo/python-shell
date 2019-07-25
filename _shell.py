@@ -122,67 +122,11 @@ def Shell(): #define command Shell()
             print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
             import antigravity
         elif txt == "clear":
-            print('''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            ''')
+            for i in range(0, 11):
+                print()
         elif txt == "cls":
-            print('''
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            ''')
+            for i in range(0, 11):
+                print()
         elif txt == "egg":
             if egg == 1:
                 print("What more do you want from me? I have nothing left to offer you.")
@@ -251,14 +195,14 @@ def Shell(): #define command Shell()
             elif numbersExec == "4 8 15 16 23 32":
                 print("It's 42, said Jack")
             elif numbersExec == "4815162332":
-                print("It's 42, said Jack")
+                print('"It\'s 42," said Jack')
             elif numbersExec == "4 8 15 16 23 32 EXECUTE":
                 print("SyntaxError: you gotta be kidding me. We've got Locke??")
             elif numbersExec == "4 8 15 16 23 32 execute":
                 print("SyntaxError: you gotta be kidding me. We've got Locke??")
             elif numbersExec == "4815162332 execute":
-                print("SyntaxError: you gotta be kidding me. We've got Locke??")
-            elif numbersExec == "4815162342 EXECUTE":
+                print("SyntaxError: you've got to be kidding me. We've got Locke??")
+            elif numbersExec == "4815162332 EXECUTE":
                 print("SyntaxError: Good grief. We've got Locke??")
             else: 
                 print("Hello?")
