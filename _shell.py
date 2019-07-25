@@ -21,7 +21,7 @@ def exitShell(): #make a new command called exitShell() that does the following:
         print("98%.....")
         time.sleep(0.12)
         print("99%......")
-        time.sleep(0.46)
+        time.sleep(0.21)
         print('100%..')
         print('Exiting...')
         exit() #exit program
@@ -68,7 +68,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.10.7! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.11! thanks for using!  ") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -92,7 +92,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.10.7. Thanks for using! ")
+            print("This is CustPy Shell 0.11. Thanks for using! ")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
@@ -239,8 +239,8 @@ def Shell(): #define command Shell()
             
             This is the orientation text for the Swan station. I am Marvin Candle, the founder of DHARMA. 
             
-            Every time you type this command, you must enter the code to prevent another Incident—and therefore save the world. 
-            Never attempt to use the Computer for anything other than the Code, because there may be another Incident. 
+            Every time you type this command, you must enter the Code to prevent another Incident—and prevent a global collapse. 
+            You should not attempt to use the Computer for anything other than the Code, because there may be another Incident. 
             
             Thank you for being a member of the DHARMA Initiative. In 540 days, your replacements will arrive. 
             ''')
