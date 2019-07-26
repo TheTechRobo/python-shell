@@ -72,7 +72,7 @@ def ver(): #make a new command called ver()
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
-        os.system(start activ.bat)
+        os.system('start activ.bat')
     else:
         activate = input("What command?")
         key = input("What key?")
