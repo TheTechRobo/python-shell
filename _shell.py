@@ -5,8 +5,9 @@ me = 0
 egg = 0
 tie = 0
 runThru = 0
-import time #
-import os #Now I can control the OS using commands
+import time #now I can use time
+import os #now I can control the OS using commands
+import random #now I can use randomness
 #New commands made when the script starts, to make the if txt == ... more compact  
 def exitShell(): #make a new command called exitShell() that does the following: 
     yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
@@ -58,6 +59,8 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     what is your favourite character in Lost
     swan --usage
     swan --usage --splice
+    sudo flip-coin process coinResult
+    sudo cpy-get install flip-coin
     ''')
 def up2down():
     from tqdm import tqdm
@@ -68,7 +71,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.11! thanks for using!  ") #output all that
+    print("Welcome to CustPy 0.12! thanks for using!") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -92,10 +95,10 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.11. Thanks for using! ")
+            print("This is CustPy Shell 0.12. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
-        elif txt == "VER": #Python is case-sensitive so i'm making user's lives easier ;)
+        elif txt == "VER": #Python is case-sensitive so I'm making user's lives easier ;)
             ver()
         elif txt == "ls": #if they type ls
             ls() #run the ls() command (lines 9 through 16)
@@ -105,17 +108,19 @@ def Shell(): #define command Shell()
             print("Starting exit daemon....")
             exitShell()
         elif txt == "EXIT":
-            exitShll()
+            exitShell()
         elif txt == "help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
         elif txt == "slate":
             print("slate has been delayed, sorry for the inconvenience")
         elif txt == "I need help":
             print("HELP MODE. Type ls for commands. Know that parts of it are case-sensitive. I tried to cover it up the best I could but it led to bugs sometimes. ")
-        elif txt == "
+        elif txt == "":
+            print("Please type a command")
         elif txt == "laugh":
             print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
             print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
+            time.sleep(2)
             import antigravity #A comic strip
         elif txt == "I need a laugh":
             print("Open a new Python session, then type from __future__ import braces and look at the error. ") #A python joke
@@ -193,7 +198,7 @@ def Shell(): #define command Shell()
             ________________________________
             ''')
             elif numbersExec == "4 8 15 16 23 32":
-                print("It's 42, said Jack")
+                print('"It\'s 42," said Jack')
             elif numbersExec == "4815162332":
                 print('"It\'s 42," said Jack')
             elif numbersExec == "4 8 15 16 23 32 EXECUTE":
@@ -244,6 +249,70 @@ def Shell(): #define command Shell()
             
             Thank you for being a member of the DHARMA Initiative. In 540 days, your replacements will arrive. 
             ''')
+        elif txt == "sudo flip-coin process coinResult":
+            if coinPkg == "installed":
+                flips = int(input('how many times do you want to flip the coin? '))
+                outcomes = ['head','tail']
+                wieghts = [.5,.5]
+                head=0
+                tail=0
+                for flip in range(flips):
+	                h_t = random.choice(outcomes)
+	                if h_t == 'head':
+		                head += 1
+	                else:
+		                tail += 1
+                    def percentage(ht,outcome):
+	                    global flips
+	                    percent = outcome/flips * 100
+	                    print('{}: {}%'.format(ht,"%.2f" % percent))
+                    percentage('head',head)
+                    percentage('tail',tail)
+            elif coinPkg == "notInstalled":
+                print("coinFlip is not installed, use 'sudo cpy-get install cFlip' to install")
+            elif coinPkg == "noSameKey":
+                print('''Alert! coinFlip does not have a valid key anymore
+                This probably means that the developer forgot to update the key, but it could mean it was tampered with
+                Please try downloading again, with 'sudo cpy-verify install cFlip' instead''')
+        elif txt == "sudo cpy-get install flip-coin":
+            chances = [0, 1]
+            keyProbab = random.choice(chances)
+            if keyProbab == 0:
+                print('''Searching cache........
+                flip-coin is a symb-link to cFlip. Please take caution, this may be someone tricking you into downloading a virus
+                Installing in sandbox mode
+                Verifying...........
+                The identity of the developer has been confirmed as TheTechRobo''')
+                Yn = input("this will take 0kB on your system. Continue (Y/n, case-sensitive)")
+                if Yn == "Y":
+                    print("Downloading archives, done")
+                    print("Installing app, done")
+                    print("Updating symb-links.......")
+                    time.sleep(1)
+                    print("Done. Updating files.....")
+                    time.sleep(3.14159265358979")
+                    print("Done. Please wait.......")
+                    time.sleep(0.5)
+                    print("Finished with errors")
+                    coinPkg = "noSameKey"
+            else:
+                print('''Searching cache........
+                flip-coin is a symb-link to cFlip. Please take caution, this may be someone tricking you into downloading a virus
+                Installing in sandbox mode
+                Verifying...........
+                The identity of the developer has been confirmed as TheTechRobo''')
+                Yn = input("this will take 0kB on your system. Continue (Y/n, case-sensitive)")
+                if Yn == "Y":
+                    print("Downloading archives, done")
+                    print("Installing app, done")
+                    print("Updating symb-links.......")
+                    time.sleep(1)
+                    print("Done. Updating files.....")
+                    time.sleep(3.14159265358979")
+                    print("Done. Please wait.......")
+                    time.sleep(0.5)
+                    print("Finished successfully!")
+                    coinPkg = "noSameKey"
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
         runThru = runThru + 1
