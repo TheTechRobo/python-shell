@@ -71,7 +71,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.12! thanks for using!") #output all that
+    print("Welcome to CustPy 0.12.1! thanks for using!") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive)
     if win == "y":
@@ -95,7 +95,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.12. Thanks for using!")
+            print("This is CustPy Shell 0.12.1. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so I'm making user's lives easier ;)
@@ -127,10 +127,10 @@ def Shell(): #define command Shell()
             print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
             import antigravity
         elif txt == "clear":
-            for i in range(0, 11):
+            for i in range(0, 19):
                 print()
         elif txt == "cls":
-            for i in range(0, 11):
+            for i in range(0, 19):
                 print()
         elif txt == "egg":
             if egg == 1:
@@ -312,7 +312,38 @@ def Shell(): #define command Shell()
                     print("Done. Please wait.......")
                     time.sleep(0.5)
                     print("Finished successfully!")
-                    coinPkg = "noSameKey"
+                    coinPkg = "installed"
+		else: 
+			print("Canceled")
+	elif txt == "sudo cpy-verify install flip-coin":
+		print('''Searching cache........
+		flip-coin is a symb-link to cFlip. Please take caution, this may be someone tricking you into downloading a virus
+                Installing with verification
+                Verifying...........
+                The identity of the developer has been confirmed as TheTechRobo''')
+                Yn = input("this will take 0kB on your system. Continue (Y/n, case-sensitive)")
+                if Yn == "Y":
+                    print("Downloading archives, done")
+                    print("Installing app, done")
+                    print("Updating symb-links.......")
+                    time.sleep(1)
+                    print("Done. Updating files.....")
+                    time.sleep(3.14159265358979")
+                    print("Done. Please wait.......")
+                    time.sleep(0.5)
+                    print("Scanning, done")
+                    print("Finished successfully!")
+                    coinPkg = "installed"
+		else: 
+                    print("Canceled")
+	elif txt == "sawyerism":
+		for i in range(0, 19):
+			print()
+		print("Loading list......")
+		sawyerisms = ["Hey Freckles", "Morning yourself", "the guy who looks like he's from a Burt Reynolds movie"]
+		print("Picking random Sawyerism....")
+		sawyerismOfChoice = random.choice(sawyerisms)
+		print
         else: #If the user types anything else
             print("Unknown Command. Type ls for everything")
         runThru = runThru + 1
