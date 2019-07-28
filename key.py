@@ -1,6 +1,6 @@
 activatedItem1 = "cls"
 activatedItem2 = "Slate"
-whoa223 = 11000001110
+whoa223 = 11000001101
 loHe = whoa223 + 1
 dds330 = loHe
 key = dds330
