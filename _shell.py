@@ -73,7 +73,7 @@ def up2down():
 def ver(): #make a new command called ver()
     print("Welcome to CustPy 0.12.1! thanks for using!") #output all that
 def activ():
-    win = input("Is your OS the following: Windows? (y/n, case-sensitive)
+    win = input("Is your OS the following: Windows? (y/n, case-sensitive")
     if win == "y":
         os.system('start activ.bat')
     else:
@@ -84,6 +84,11 @@ def activ():
         keyStore()
 def keyStore():
     print("Unable to connect to Blacksmith.")
+def startUp():
+    jokes = ["Infusing with Caffiene.......", "Loading Nothing........", "Why can't you be coding this instead of using this?", "Getting dumber than a doornail......"]
+    jokeOfChoice = random.choice(jokes)
+    print(jokeOfChoice)
+    time.sleep(2)
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
