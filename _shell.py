@@ -10,9 +10,11 @@ import os #now I can control the OS using commands
 import random #now I can use randomness
 #New commands made when the script starts, to make the if txt == ... more compact  
 def exitShell(): #make a new command called exitShell() that does the following: 
-    yn = input("Sure you want to exit CustPyth? (y/n)") #ask if they're sure
+    yn = input("You're SURE you want to exit CustPy? ") #ask if they're sure
+    yn = input("Like really sure? ")
+    yn = input("Then type y. (If you're unsure type n) ")
     if yn == "y": #if they type y
-        print('Stopping Services.......')
+        print('Stopping services.......')
         print("25%.........")
         time.sleep(1)
         print("96%......")
@@ -24,10 +26,11 @@ def exitShell(): #make a new command called exitShell() that does the following:
         print("99%......")
         time.sleep(0.21)
         print('100%..')
+        print("Stopping chatterbox daemon, done")
         print('Exiting...')
         exit() #exit program
     else: #otherwise
-        Shell() # go back to the Shell()
+        Shell() #go back to the Shell()
 def ls():
         print('''COMMAND LIST
 NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you can't type Cls
@@ -71,7 +74,7 @@ def up2down():
         for data in tqdm(response.iter_content()):
             handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.12.1! thanks for using!") #output all that
+    print("Welcome to CustPy 0.12.2! thanks for using!") #output all that
 def activ():
     win = input("Is your OS the following: Windows? (y/n, case-sensitive")
     if win == "y":
@@ -89,6 +92,10 @@ def startUp():
     jokeOfChoice = random.choice(jokes)
     print(jokeOfChoice)
     time.sleep(2)
+    print("Loaded all the good stuff")
+print()
+startUp()
+print()
 #Main loop
 def Shell(): #define command Shell()
     while True: # do all this section in a loop (when done, restart)
@@ -100,7 +107,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.12.1. Thanks for using!")
+            print("This is CustPy Shell 0.12.2. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so I'm making user's lives easier ;)
