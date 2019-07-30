@@ -19,3 +19,5 @@ This is when it starts getting updated less. 5.3 and beyond. It's when it's a pr
 This is when it gets...  updates every week? Depends when it starts. When the dev has a hard time thinking of things. 
 ### 8th stage: Abandoned
 Hope it never happens with my programs. Stops getting updated at all. Sometimes new devs come along and the whole cycle repeats. Sometimes just the release cycle. Sometimes just the pre-release cycle. It depends when it starts, sometimes — hopefully — never. 
+### 9th Stage: Obsoletion
+This is the worst stage. It's when you CAN'T use the program — or it's really hard to use — because it uses old technologies. At least when it's in the eight stage it's still okay to use
