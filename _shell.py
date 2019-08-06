@@ -80,11 +80,16 @@ def activ():
     if win == "y":
         os.system('start activ.bat')
     else:
-        activate = input("What command?")
-        key = input("What key?")
-        print("Okay, processing your data.....")
-        print("SyntaxError: Key Invalid! ")
-        keyStore()
+	linmac = input("Then Linux?")
+	if linmac == "y":
+		os.system('chmod +x activ.sh')
+		os.system('activ.sh')
+	else:
+        	activate = input("What command?")
+        	key = input("What key?")
+        	print("Okay, processing your data.....")
+        	print("SyntaxError: Key Invalid! ")
+        	keyStore()
 def keyStore():
     print("Unable to connect to Blacksmith.")
 def startUp():
