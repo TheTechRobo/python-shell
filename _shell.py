@@ -10,18 +10,16 @@ import os #now I can control the OS using commands
 import random #now I can use randomness
 #New commands made when the script starts, to make the if txt == ... more compact  
 def exitShell(): #make a new command called exitShell() that does the following: 
-    yn = input("You're SURE you want to exit CustPy? ") #ask if they're sure
-    yn = input("Like really sure? ")
+    input("You're SURE you want to exit CustPy? ") #ask if they're sure
+    input("Like really sure? ")
     yn = input("Then type y. (If you're unsure type n) ")
     if yn == "y": #if they type y
         print('Stopping services.......')
-        print("25%.........")
+        print("21%.........")
         time.sleep(1)
         print("96%......")
         time.sleep(0.2)
         print("97%.....")
-        time.sleep(0.2)
-        print("98%.....")
         time.sleep(0.12)
         print("99%......")
         time.sleep(0.21)
@@ -66,25 +64,35 @@ NOTE: you MUST type these commands EXACTLY as written. Like if it says cls you c
     sudo cpy-get install flip-coin
     ''')
 def up2down():
-    from tqdm import tqdm
-    import requests
-    url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
-    response = requests.get(url, stream=True)
-    with open("_shell", "wb") as handle:
-        for data in tqdm(response.iter_content()):
-            handle.write(data)
+	if lac == "y":
+		print("Trying three ways")
+		os.system('git https://github.com/TheTechRobo/python-shell/archive/omega!!.zip')
+		works = input("Did that work? (without syntax error?")
+		if works == "y":
+			os.system('curl -O https://github.com/thetechrobo/python-shell/archive/omega!!.zip')
+		else:
+			os.system('wget https://github.com/thetechrobo/python-shell/archive/omega!!.zip')
+			works = input("Did that work?")
+			if works == "y":
+				os.system('echo Now you will have to uncompress a ZIP')
+    else:
+		from tqdm import tqdm
+    	import requests
+    	url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
+    	response = requests.get(url, stream=True)
+    	with open("_shell", "wb") as handle:
+        	for data in tqdm(response.iter_content()):
+            	handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.12.2! thanks for using!") #output all that
+    print("Welcome to CustPy 0.13! thanks for using!") #output all that
 def activ():
-    win = input("Is your OS the following: Windows? (y/n, case-sensitive")
     if win == "y":
         os.system('start activ.bat')
     else:
-	linmac = input("Then Linux?")
-	if linmac == "y":
-		os.system('chmod +x activ.sh')
-		os.system('activ.sh')
-	else:
+		if linmac == "y":
+			os.system('chmod +x activ.sh')
+			os.system('activ.sh')
+		else:
         	activate = input("What command?")
         	key = input("What key?")
         	print("Okay, processing your data.....")
@@ -93,6 +101,11 @@ def activ():
 def keyStore():
     print("Unable to connect to Blacksmith.")
 def startUp():
+    win = input("Is your OS Windows? (y/n, case-sensitive)")
+    if win == "n":
+		lac = "Linux or Mac? (y/n, case-sensitive)")
+		if lac == "n":
+			print("Then we'll have to revert to the old-fashioned way")
     jokes = ["Infusing with Caffiene.......", "Loading Nothing........", "Why can't you be coding this instead of using this?", "Getting dumber than a doornail......"]
     jokeOfChoice = random.choice(jokes)
     print(jokeOfChoice)
@@ -112,7 +125,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.12.2. Thanks for using!")
+            print("This is CustPy Shell 0.13. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so I'm making user's lives easier ;)
@@ -144,11 +157,21 @@ def Shell(): #define command Shell()
             print("Redirecting to the Interweb. Fasten your seatbelts and make sure the Internet is connected")
             import antigravity
         elif txt == "clear":
-            for i in range(0, 19):
-                print()
+            if win == "y":
+				os.system('cls')
+			elif lac == "y":
+				os.system('clear')
+			else:
+				for i in range(0, 21):
+					print()
         elif txt == "cls":
-            for i in range(0, 19):
-                print()
+            if win == "y":
+				os.system('cls')
+			elif lac == "y":
+				os.system('clear')
+			else:
+				for i in range(0, 21):
+                	print()
         elif txt == "egg":
             if egg == 1:
                 print("What more do you want from me? I have nothing left to offer you.")
@@ -161,8 +184,10 @@ def Shell(): #define command Shell()
         elif txt == "no you're not":
             if me == 1:
                 print("Oh yeah, you're the king of New York. My bad. I must have the words wrong")
-            else:
+			elif me !== 1:
                 print("I'm not what again?")
+			else:
+				print("I'm not what again?")
         elif txt == "activateCmd":
             activ()
         elif txt == "I found the egg":
