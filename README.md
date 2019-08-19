@@ -21,8 +21,6 @@ print("This ain't MS-DOS") #output This ain't MS-DOS
 In that case, #output This ain't MS-DOS would be the comment, but print("This ain't MS-DOS") is a Python command. 
 #### I hope you LOVE CustPy... if you have any feed-back WHATSOEVER please leave it in the Issues section
 
-###### Can you BELIEVE it's already omega? Almost a month and it's almost a release!! 
-
 
 
 
