@@ -106,7 +106,7 @@ def startUp():
 		lac = "Linux or Mac? (y/n, case-sensitive)")
 		if lac == "n":
 			print("Then we'll have to revert to the old-fashioned way")
-    jokes = ["Infusing with Caffiene.......", "Loading Nothing........", "Why can't you be coding this instead of using this?", "Getting dumber than a doornail......"]
+    jokes = ["Infusing with Caffiene.......", "Loading Nothing........", "Why can't you be coding this instead of using this?", "Loading Peeves......"]
     jokeOfChoice = random.choice(jokes)
     print(jokeOfChoice)
     time.sleep(2)
