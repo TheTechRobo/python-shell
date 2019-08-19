@@ -17,7 +17,9 @@ If you go into the _shell.py, it's complex. So, that's why I added comments. Any
 #this is a comment
 ##### EXAMPLE
 Look at the following:  
-print("This ain't MS-DOS") #output This ain't MS-DOS
+
+    print("This ain't MS-DOS") #output This ain't MS-DOS
+    
 In that case, #output This ain't MS-DOS would be the comment, but print("This ain't MS-DOS") is a Python command. 
 #### I hope you LOVE CustPy... if you have any feed-back WHATSOEVER please leave it in the Issues section
 
