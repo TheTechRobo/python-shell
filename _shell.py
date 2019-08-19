@@ -1,13 +1,5 @@
 #made using Python 3.6.5
 #TtR M
-#Setup
-me = 0
-egg = 0
-tie = 0
-runThru = 0
-import time #now I can use time
-import os #now I can control the OS using commands
-import random #now I can use randomness
 #New commands made when the script starts, to make the if txt == ... more compact  
 def exitShell(): #make a new command called exitShell() that does the following: 
     input("You're SURE you want to exit CustPy? ") #ask if they're sure
@@ -75,42 +67,52 @@ def up2down():
 			works = input("Did that work?")
 			if works == "y":
 				os.system('echo Now you will have to decompress a ZIP')
-    			else:
+			else:
 				from tqdm import tqdm
-    				import requests
-    				url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
-    				response = requests.get(url, stream=True)
-    				with open("_shell", "wb") as handle:
-        				for data in tqdm(response.iter_content()):
-            				handle.write(data)
+				import requests
+				url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
+				response = requests.get(url, stream=True)
+				with open("_shell", "wb") as handle:
+					for data in tqdm(response.iter_content()):
+						handle.write(data)
 def ver(): #make a new command called ver()
-    print("Welcome to CustPy 0.13! thanks for using!") #output all that
+    print("Welcome to CustPy 0.14! thanks for using!") #output all that
 def activ():
-    if win == "y":
-        os.system('start activ.bat')
-    else:
-		if linmac == "y":
-			os.system('chmod +x activ.sh')
-			os.system('activ.sh')
-		else:
-        	activate = input("What command?")
-        	key = input("What key?")
-        	print("Okay, processing your data.....")
-        	print("SyntaxError: Key Invalid! ")
-        	keyStore()
+	if win == "y":
+		os.system('start activ.bat')
+	elif linmac == "y":
+		os.system('chmod +x activ.sh')
+		os.system('activ.sh')
+	else:
+		activate = input("What command?")
+		key = input("What key?")
+		print("Okay, processing your data.....")
+		print("SyntaxError: Key Invalid! ")
+		keyStore()
 def keyStore():
     print("Unable to connect to Blacksmith.")
 def startUp():
+    #Setup
+    me = 0
+    egg = 0
+    tie = 0
+    runThru = 0
+    import time #now I can use time
+    import os #now I can control the OS using commands
+    import random #now I can use randomness
+    #Stuff
     win = input("Is your OS Windows? (y/n, case-sensitive)")
     if win == "n":
-		lac = "Linux or Mac? (y/n, case-sensitive)")
-		if lac == "n":
-			print("Then we'll have to revert to the old-fashioned way")
+        lac = input("Linux or Mac? (y/n, case-sensitive)")
+        if lac == "n":
+            print("Then we'll have to revert to the old-fashioned way")
     jokes = ["Infusing with Caffiene.......", "Loading Nothing........", "Why can't you be coding this instead of using this?", "Loading Peeves......"]
     jokeOfChoice = random.choice(jokes)
     print(jokeOfChoice)
     time.sleep(2)
-    print("Loaded all the good stuff")
+    print("Loaded all the good stuff (but not the bad)")
+def amountOfCmds():
+	print("You have typed a command " +runThru +"times")
 print()
 startUp()
 print()
@@ -125,7 +127,7 @@ def Shell(): #define command Shell()
         elif txt == "sing this song to You":
             print("It goes like this: the fourth the fifth...")
         elif txt == "version":
-            print("This is CustPy Shell 0.13. Thanks for using!")
+            print("This is CustPy Shell 0.14. Thanks for using!")
         elif txt == "ver":
             ver() #run the ver() command (lines 18 and 19)
         elif txt == "VER": #Python is case-sensitive so I'm making user's lives easier ;)
@@ -158,19 +160,19 @@ def Shell(): #define command Shell()
             import antigravity
         elif txt == "clear":
             if win == "y":
-				os.system('cls')
-			elif lac == "y":
-				os.system('clear')
-			else:
-				for i in range(0, 21):
-					print()
+                os.system('cls')
+            elif lac == "y":
+                os.system('clear')
+            else:
+                for i in range(0, 21):
+                    print()
         elif txt == "cls":
             if win == "y":
-				os.system('cls')
-			elif lac == "y":
-				os.system('clear')
-			else:
-				for i in range(0, 21):
+                os.system('cls')
+            elif lac == "y":
+                os.system('clear')
+            else:
+                for i in range(0, 21):
                 	print()
         elif txt == "egg":
             if egg == 1:
@@ -184,10 +186,8 @@ def Shell(): #define command Shell()
         elif txt == "no you're not":
             if me == 1:
                 print("Oh yeah, you're the king of New York. My bad. I must have the words wrong")
-			elif me !== 1:
+            if me != 1:
                 print("I'm not what again?")
-			else:
-				print("I'm not what again?")
         elif txt == "activateCmd":
             activ()
         elif txt == "I found the egg":
@@ -203,13 +203,13 @@ def Shell(): #define command Shell()
             if tie == 1:
                 print("Gee, Grumpy, maybe your foot was in the wrong spot.")
                 print("I'll show you spots, you big galoot!")
-             else: 
-                print("SyntaxError: not gonna happen)
+            if tie != 1: 
+            	print("SyntaxError: not gonna happen")
         elif txt == "update":
             up2down()
         elif txt == "purge":
             print("That's not nice to the DHARMA folk!")
-        elif txt == "swan"
+        elif txt == "swan":
             numbersExec = input(">: ")
             if numbersExec == "4815162342":
                 print("SyntaxError: you forgot EXECUTE")
@@ -265,7 +265,7 @@ def Shell(): #define command Shell()
         elif txt == "what plane should I fly":
             print("Oceanic Flight 815")
         elif txt == "cmd --amount":
-            print("You have typed a command " +runThru "times")
+            amountOfCmds()
         elif txt == "what is your favourite character in Lost":
             print("Desmond all the way!") #While I was typing De, it came out Sw. He worked in the Swan...
             #The keys on a keyboard of Desm and Swan are RIGHT BESIDE each other! Wow.
@@ -275,7 +275,7 @@ def Shell(): #define command Shell()
             
             This is the orientation text for the Swan station. I am Marvin Candle, the founder of DHARMA. 
             
-            Every time you type this command, you must enter the code, to prevent—
+            Every time you type this command, you must enter the code, to prevent--
             Never attempt to use the Computer for anything other than the Code, because there may—
             
             Thank you for being a member of the DHARMA Initiative. In 540 days, your replacements will arrive. 
@@ -299,15 +299,15 @@ def Shell(): #define command Shell()
                 head=0
                 tail=0
                 for flip in range(flips):
-	                h_t = random.choice(outcomes)
-	                if h_t == 'head':
-		                head += 1
-	                else:
-		                tail += 1
+                    h_t = random.choice(outcomes)
+                    if h_t == 'head':
+                        head += 1
+                    else:
+                        tail += 1
                     def percentage(ht,outcome):
-	                    global flips
-	                    percent = outcome/flips * 100
-	                    print('{}: {}%'.format(ht,"%.2f" % percent))
+                        global flips
+                        percent = outcome/flips * 100
+                        print('{}: {}%'.format(ht,"%.2f" % percent))
                     percentage('head',head)
                     percentage('tail',tail)
             elif coinPkg == "notInstalled":
@@ -332,7 +332,7 @@ def Shell(): #define command Shell()
                     print("Updating symb-links.......")
                     time.sleep(1)
                     print("Done. Updating files.....")
-                    time.sleep(3.14159265358979")
+                    time.sleep(3.14159265358979)
                     print("Done. Please wait.......")
                     time.sleep(0.5)
                     print("Finished with errors")
@@ -350,43 +350,39 @@ def Shell(): #define command Shell()
                     print("Updating symb-links.......")
                     time.sleep(1)
                     print("Done. Updating files.....")
-                    time.sleep(3.14159265358979")
+                    time.sleep(3.14159265358979)
                     print("Done. Please wait.......")
                     time.sleep(0.5)
                     print("Finished successfully!")
                     coinPkg = "installed"
-		else: 
-			print("Canceled")
-	elif txt == "sudo cpy-verify install flip-coin":
-		print('''Searching cache........
+    if txt == "sudo cpy-verify install flip-coin":
+        print('''Searching cache........
 		flip-coin is a symb-link to cFlip. Please take caution, this may be someone tricking you into downloading a virus
                 Installing with verification
                 Verifying...........
                 The identity of the developer has been confirmed as TheTechRobo''')
-                Yn = input("this will take 0kB on your system. Continue (Y/n, case-sensitive)")
-                if Yn == "Y":
-                    print("Downloading archives, done")
-                    print("Installing app, done")
-                    print("Updating symb-links.......")
-                    time.sleep(1)
-                    print("Done. Updating files.....")
-                    time.sleep(3.14159265358979)
-                    print("Done. Please wait.......")
-                    time.sleep(0.5)
-                    print("Scanning, done")
-                    print("Finished successfully!")
-                    coinPkg = "installed"
-		else: 
-                    print("Canceled")
-	elif txt == "sawyerism":
-		for i in range(0, 19):
-			print()
-		print("Loading list......")
-		sawyerisms = ["Hey Freckles", "Morning yourself", "the guy who looks like he's from a Burt Reynolds movie"]
-		print("Picking random Sawyerism....")
-		sawyerismOfChoice = random.choice(sawyerisms)
-		print
-        else: #If the user types anything else
-            print("Unknown Command. Type ls for everything")
-        runThru = runThru + 1
+        Yn = input("this will take 0kB on your system. Continue (Y/n, case-sensitive)")
+        if Yn == "Y":
+            print("Downloading archives, done")
+            print("Installing app, done")
+            print("Updating symb-links.......")
+            time.sleep(1)
+            print("Done. Updating files.....")
+            time.sleep(3.14159265358979)
+            print("Done. Please wait.......")
+            time.sleep(0.5)
+            print("Scanning, done")
+            print("Finished successfully!")
+            coinPkg = "installed"
+    elif txt == "sawyerism":
+        for i in range(0, 19):
+            print()
+            print("Loading list......")
+            sawyerisms = ["Hey Freckles", "Morning yourself", "the guy who looks like he's from a Burt Reynolds movie"]
+            print("Picking random Sawyerism....")
+            sawyerismOfChoice = random.choice(sawyerisms)
+            print(sawyerismOfChoice)
+    else: #If the user types anything else
+        print("Unknown Command. Type ls for everything")
+    runThru = runThru + 1
 Shell()
