@@ -74,15 +74,15 @@ def up2down():
 			os.system('wget https://github.com/thetechrobo/python-shell/archive/omega!!.zip')
 			works = input("Did that work?")
 			if works == "y":
-				os.system('echo Now you will have to uncompress a ZIP')
-    	else:
-			from tqdm import tqdm
-    		import requests
-    		url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
-    		response = requests.get(url, stream=True)
-    		with open("_shell", "wb") as handle:
-        		for data in tqdm(response.iter_content()):
-            		handle.write(data)
+				os.system('echo Now you will have to decompress a ZIP')
+    		else:
+				from tqdm import tqdm
+    			import requests
+    			url = "https://raw.githubusercontent.com/TheTechRobo/python-shell/omega!!/_shell.py"
+    			response = requests.get(url, stream=True)
+    			with open("_shell", "wb") as handle:
+        			for data in tqdm(response.iter_content()):
+            			handle.write(data)
 def ver(): #make a new command called ver()
     print("Welcome to CustPy 0.13! thanks for using!") #output all that
 def activ():
