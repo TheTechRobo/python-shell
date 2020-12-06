@@ -1,4 +1,18 @@
 # python-shell
+
+PLEASE GO AWAY
+
+THIS CODE IS GARBAGE
+
+TOO MANY LOST REFERENCES 
+
+PLEASE STOPPPPPPPPPPP
+
+JUST GO
+
+PLEASEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+
 Simple, commented Python shell. Doesn't seem to work with the Python Launcher, but works with IDLE and normal Python
 
 
